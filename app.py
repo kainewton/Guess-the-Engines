@@ -3,10 +3,10 @@ import tensorflow as tf
 import numpy as np
 import requests
 import os
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 
-FILE_ID = "1LG2f1wB2tS08-Jn564WAcLvDV8mvABze"
-MODEL_URL = f"https://drive.google.com/drive/folders={FILE_ID}"
+FILE_ID = "1oaJ0Uavz_0YDyhrwUSgcjN0gbsUaBGjI"
+MODEL_URL = f"https://drive.google.com/uc?id={FILE_ID}"
 MODEL_PATH = "piston_classifier.h5"
 
 if not os.path.exists(MODEL_PATH):
@@ -41,7 +41,7 @@ if uploaded_file is not None:
     img_array = np.expand_dims(img_array, axis=0)
 
     prediction = model.predict(img_array)
-    result = "Perfect" if prediction[0][0] < 0.5 else "Defected"
+    result = "Perfect" if prediction[0][0] > 0.5 else "Defected"
 
     st.subheader(f"Prediction result: **{result}**")
 
