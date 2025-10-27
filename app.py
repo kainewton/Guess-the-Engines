@@ -6,7 +6,7 @@ import os
 from keras.preprocessing import image
 
 FILE_ID = "1LG2f1wB2tS08-Jn564WAcLvDV8mvABze"
-MODEL_URL = f"https://drive.google.com/drive/folders/1LG2f1wB2tS08-Jn564WAcLvDV8mvABze ={FILE_ID}"
+MODEL_URL = f"https://drive.google.com/drive/folders={FILE_ID}"
 MODEL_PATH = "piston_classifier.h5"
 
 if not os.path.exists(MODEL_PATH):
@@ -51,4 +51,4 @@ if uploaded_file is not None:
         st.warning("The piston is defected")
 
 st.markdown("---")
-st.caption("iseng | Powered by TensorFlow + Streamlit")
+st.caption("belajar machine learning | @khaisaint")
