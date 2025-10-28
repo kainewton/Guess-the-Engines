@@ -1,6 +1,6 @@
 ## Guess the Engine (Piston Classifier)
 
-A Machine Learning-based Streamlit app that classifies piston images as either Perfect or Defected.
+A Machine Learning-based Streamlit app that classifies piston images as either perfect or defected.
 The model is trained on a dataset of piston images with two quality categories and integrated into a simple, interactive web interface.
 
 ## About Machine Learning
@@ -38,7 +38,7 @@ streamlit run app.py
 ## Model File
 The trained model (.h5) is stored on google drive and will be automatically downloaded when the app runs :
 ```bash
-https://drive.google.com/drive/folders/1LG2f1wB2tS08-Jn564WAcLvDV8mvABze    
+https://drive.google.com/file/d/1oaJ0Uavz_0YDyhrwUSgcjN0gbsUaBGjI/view?usp=drive_link   
 ```
 
 
